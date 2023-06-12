@@ -3,7 +3,8 @@
 import { useContext, useEffect, useState } from 'react';
 import { doc, getDoc, DocumentData } from '@firebase/firestore';
 import { db } from '../../firebaseConfig';
-import { deleteChat, deleteGroup, MAIN_GROUP_CHAT_ID } from '../../API/api';
+import { deleteChat, deleteGroup } from '../../API/api';
+import { MAIN_GROUP_CHAT_ID } from '../../constans';
 import { AuthContext } from '../../context/AuthContext';
 import { UserContext } from '../../context/UserContext';
 import { ActiveChatContext } from '../../context/ActiveChatContext';

@@ -11,9 +11,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import type { User } from 'firebase/auth';
 import { auth, db, storage } from '../firebaseConfig';
 
-export const MAIN_GROUP_CHAT_ID = 'g_6j5jkb5JQJrT4xkArXtq';
-export const MAIN_GROUP_CHAT_NAME = 'Launge';
-export const MAIN_GROUP_CHAT_PHOTO = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Qjtp0fWNnqp0cR4tp6a7PAOiObojZG9d-A&usqp=CAU';
+import { MAIN_GROUP_CHAT_ID, MAIN_GROUP_CHAT_NAME, MAIN_GROUP_CHAT_PHOTO } from '../constans';
 
 const loadProfilePhoto = async (name: string, avatar: File | null, user = auth.currentUser) => {
   const storageRef = ref(storage, `${name}${Math.floor(100000 + Math.random() * 900000)}`);

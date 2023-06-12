@@ -7,7 +7,7 @@ import PopupMenuItem from '../PopupMenuItem/PopupMenuItem';
 import { ReactComponent as TrashIcon } from '../../assets/icons/trash.svg';
 import { ReactComponent as MarkAsReadIcon } from '../../assets/icons/mark-chat-read.svg';
 import { AuthContext } from '../../context/AuthContext';
-import { MAIN_GROUP_CHAT_ID } from '../../API/api';
+import { MAIN_GROUP_CHAT_ID } from '../../constans';
 import './ContextMenu.scss';
 
 interface ContextMenuProps {
