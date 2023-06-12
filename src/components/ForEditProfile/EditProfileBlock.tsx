@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { ArrowLeftIcon } from '../../assets/icons/icons';
 import { SettingsHeaderProps, User } from '../../types';
 import { AuthContext } from '../../context/AuthContext';
-import FormInput from '../FormInput/FormInput';
+import FormInput from '../form/FormInput/FormInput';
 import AddPhotoButton from '../AddPhotoButton/AddPhotoButton';
 import { changeProfileBio, changeProfileName, changeProfilePhoto } from '../../API/api';
 import './EditProfileBlock.scss';

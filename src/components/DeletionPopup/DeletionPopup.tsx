@@ -9,7 +9,7 @@ import { AuthContext } from '../../context/AuthContext';
 import { UserContext } from '../../context/UserContext';
 import { ActiveChatContext } from '../../context/ActiveChatContext';
 import './DeletionPopup.scss';
-import Avatar from '../Avatar/Avatar';
+import Avatar from '../common/Avatar/Avatar';
 
 interface ContextMenuProps {
   isVisible: boolean,

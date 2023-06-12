@@ -3,7 +3,7 @@ import { AuthContext } from '../../../context/AuthContext';
 import avatarPlaceholder from '../../../assets/icons/avatar-placeholder.png';
 
 import { AddPhotoIcon, InfoIcon, NameUserIcon } from '../../../assets/icons/icons';
-import PopupMenuItem from '../../PopupMenuItem/PopupMenuItem';
+import PopupMenuItem from '../../common/PopupMenuItem/PopupMenuItem';
 import './UserInfo.scss';
 import { changeProfilePhoto } from '../../../API/api';
 

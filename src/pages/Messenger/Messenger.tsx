@@ -14,12 +14,12 @@ import './Messenger.scss';
 
 function Messenger() {
   const {
-    popap,
-    setPopap,
+    popup,
+    setPopup,
     setFile,
     setUrl,
   } = useContext(SendImageContext);
-  const { url, imagePopap, setImagePopap } = useContext(ModalPhotoContext);
+  const { url, imagePopup, setImagePopup } = useContext(ModalPhotoContext);
 
   const { isActiveSidebar, setActiveSidebar } = useContext(ActiveVisibilitySidebar);
   const { userSidebar } = useContext(UserSidebarContext);
@@ -37,14 +37,14 @@ function Messenger() {
     }
   });
 
-  const closePopap = () => {
-    if (popap) {
-      setPopap(false);
+  const closePopup = () => {
+    if (popup) {
+      setPopup(false);
       setFile(null);
       setUrl('');
     }
-    if (imagePopap) {
-      setImagePopap(false);
+    if (imagePopup) {
+      setImagePopup(false);
     }
   };
 
@@ -56,11 +56,11 @@ function Messenger() {
   return (
     <div className={isDark ? 'messenger-container dark' : 'messenger-container light'}>
       <div className="messenger">
-        {(popap || imagePopap) && <button type="button" aria-label="Blackout" className="blackout" onClick={closePopap} />}
+        {(popup || imagePopup) && <button type="button" aria-label="Blackout" className="blackout" onClick={closePopup} />}
         {isActiveSidebar ? <Sidebar sidebarClass="sidebar" /> : <Sidebar sidebarClass="sidebar hide-sidebar" />}
         {isActiveSidebar ? <Chat chatClass="chat hide-chat" /> : <Chat chatClass="chat" />}
         {userSidebar && <UserSidebar /> }
-        {imagePopap && <ModalPhoto imageUrl={url} />}
+        {imagePopup && <ModalPhoto imageUrl={url} />}
       </div>
     </div>
   );

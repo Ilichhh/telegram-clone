@@ -5,8 +5,8 @@ import {
 } from 'firebase/firestore';
 import { singIn, singUp } from '../../API/api';
 import telegramLogo from '../../assets/img/telegramLogo.svg';
-import FormInput from '../../components/FormInput/FormInput';
-import AddAvatarButton from '../../components/AddAvatarButton/AddAvatarButton';
+import FormInput from '../../components/form/FormInput/FormInput';
+import AddAvatarButton from '../../components/form/AddAvatarButton/AddAvatarButton';
 import './Form.scss';
 import { db } from '../../firebaseConfig';
 

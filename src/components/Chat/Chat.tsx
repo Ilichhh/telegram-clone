@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 import TopPanel from '../TopPanel/TopPanel';
 import ChatWindow from '../ChatWindow/ChatWindow';
 import './Chat.scss';
-import TopPanelSettings from '../TopPanelSettings/TopPanelSettings';
+import TopPanelSettings from '../TopPanel/TopPanelSettings/TopPanelSettings';
 import { ActiveChatContext } from '../../context/ActiveChatContext';
 
 function Chat(props: {chatClass: string}) {

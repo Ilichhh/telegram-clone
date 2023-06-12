@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import ChatInfo from '../ChatInfo/ChatInfo';
+import ChatInfo from './ChatInfo/ChatInfo';
 import './TopPanel.scss';
-import TopPanelTools from '../TopPanelTools/TopPanelTools';
+import TopPanelTools from './TopPanelTools/TopPanelTools';
 import { ArrowLeftIcon } from '../../assets/icons/icons';
 import { ActiveVisibilitySidebar } from '../../context/VisibleSidebarContext';
 
