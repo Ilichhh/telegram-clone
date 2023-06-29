@@ -7,8 +7,8 @@ import { UserContext } from '../../context/UserContext';
 import { ActiveChatContext } from '../../context/ActiveChatContext';
 import { clickedEmoji } from '../../context/ClickedEmojiContext';
 import { sendMessage, activateChat } from '../../API/api';
-import AttachPopup from '../AttachPopup/AttachPopup';
-import EmotionPopup from '../EmotionPopup/EmotionPopup';
+import AttachPopup from './AttachPopup/AttachPopup';
+import EmotionPopup from './EmotionPopup/EmotionPopup';
 
 import {
   EmojiIcon, AttachIcon, SendMessageIcon, AudioMessageIcon,

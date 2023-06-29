@@ -5,36 +5,36 @@ interface ProviderProps {
 }
 
 interface SendImageContextProps {
-    popap: boolean;
+    popup: boolean;
     url: string;
     file: File | null;
-    setPopap: React.Dispatch<React.SetStateAction<boolean>>
+    setPopup: React.Dispatch<React.SetStateAction<boolean>>
     setUrl: React.Dispatch<React.SetStateAction<string>>
     setFile:React.Dispatch<React.SetStateAction<File | null>>
 }
 
 export const SendImageContext = createContext<SendImageContextProps>({
-  popap: false,
+  popup: false,
   url: '',
   file: null,
-  setPopap: () => null,
+  setPopup: () => null,
   setUrl: () => null,
   setFile: () => null,
 });
 
 export function SendImageContextProvider({ children }: ProviderProps) {
-  const [popap, setPopap] = useState(false);
+  const [popup, setPopup] = useState(false);
   const [url, setUrl] = useState('');
   const [file, setFile] = useState<File | null>(null);
   const value = useMemo(() => ({
-    popap,
-    setPopap,
+    popup,
+    setPopup,
     url,
     setUrl,
     file,
     setFile,
-  }), [popap,
-    setPopap,
+  }), [popup,
+    setPopup,
     url,
     setUrl,
     file,

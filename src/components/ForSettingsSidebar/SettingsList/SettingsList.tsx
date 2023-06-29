@@ -2,7 +2,7 @@ import {
   LockIcon, DatatIcon, NoticeIcon, GearWheelIcon,
   FoldersIcon, DevicesIcon, LaungageIcon,
 } from '../../../assets/icons/icons';
-import PopupMenuItem from '../../PopupMenuItem/PopupMenuItem';
+import PopupMenuItem from '../../common/PopupMenuItem/PopupMenuItem';
 import './SettingsList.scss';
 
 function SettingsList() {

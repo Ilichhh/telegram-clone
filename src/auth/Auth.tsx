@@ -16,8 +16,10 @@ export const handleBeforeUnload = async () => {
 
 function AuthRoute(props: IProps) {
   const navigate = useNavigate();
-  window.addEventListener('beforeunload', handleBeforeUnload);
   const { children } = props;
+
+  window.addEventListener('beforeunload', handleBeforeUnload);
+
   function check() {
     const AuthCheck = onAuthStateChanged(auth, (user) => {
       if (!user) {
@@ -44,4 +46,5 @@ function AuthRoute(props: IProps) {
   }, [auth]);
   return children;
 }
+
 export default AuthRoute;

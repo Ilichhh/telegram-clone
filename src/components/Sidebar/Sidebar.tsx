@@ -1,14 +1,14 @@
 import { useState, useContext } from 'react';
-import CreateButton from '../CreateButton/CreateButton';
-import CreatePopup from '../CreatePopup/CreatePopup';
+import CreateButton from './CreateButton/CreateButton';
+import CreatePopup from './CreatePopup/CreatePopup';
 import SettingsSidebar from '../ForSettingsSidebar/SettingsSidebar';
-import SettingsMenu from '../SettingsPopap/SettingsPopap';
-import SidebarContent from '../SidebarContent/SidebarContent';
-import SidebarHeader from '../SidebarHeader/SidebarHeader';
+import SettingsPopup from './SettingsPopup/SettingsPopup';
+import SidebarContent from './SidebarContent/SidebarContent';
+import SidebarHeader from './SidebarHeader/SidebarHeader';
 import { AuthContext } from '../../context/AuthContext';
 import { SelectedUsersContext } from '../../context/SelectedUsersContext';
 import './Sidebar.scss';
-import EditGroupInfo from '../EditGroupInfo/EditGroupInfo';
+import EditGroupInfo from './EditGroupInfo/EditGroupInfo';
 import { createNewGroup } from '../../API/api';
 
 function Sidebar(props: {sidebarClass: string}) {
@@ -124,7 +124,7 @@ function Sidebar(props: {sidebarClass: string}) {
           setSearchMode={setSearchMode}
           setGroupCreationMode={setGroupCreationMode}
         />
-        <SettingsMenu
+        <SettingsPopup
           isOpen={isActivePopup}
           onClose={() => setActivePopup(false)}
           onSidebarChange={() => changeSidebar()}

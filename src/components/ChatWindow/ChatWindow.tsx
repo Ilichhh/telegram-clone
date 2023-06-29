@@ -7,10 +7,10 @@ import { ArrowLeftIcon } from '../../assets/icons/icons';
 import { ActiveChatContext } from '../../context/ActiveChatContext';
 import { SendImageContext } from '../../context/SendImageContext';
 import MessageInput from '../MessageInput/MessageInput';
-import { BubblesDateGroup } from '../BubblesDateGroup/BubblesDateGroup';
-import SendImagePopap from '../SendImagePopap/SendImagePopap';
+import { BubblesDateGroup } from './BubblesDateGroup/BubblesDateGroup';
+import SendImagePopup from '../MessageInput/SendImagePopup/SendImagePopup';
 import { AuthContext } from '../../context/AuthContext';
-import BubblesMessage from '../BubblesMessage/BubblesMessage';
+import BubblesMessage from './BubblesMessage/BubblesMessage';
 import './ChatWindow.scss';
 
 interface SplitByDates {
@@ -19,7 +19,7 @@ interface SplitByDates {
 }
 
 function ChatWindow() {
-  const { popap } = useContext(SendImageContext);
+  const { popup } = useContext(SendImageContext);
   const { activeChatID } = useContext(ActiveChatContext);
   const { currentUser } = useContext(AuthContext);
 
@@ -168,7 +168,7 @@ function ChatWindow() {
         </defs>
       </svg>
       <div className="chat-window__bg-image" />
-      {popap && <SendImagePopap />}
+      {popup && <SendImagePopup />}
     </div>
   );
 }

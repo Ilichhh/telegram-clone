@@ -5,29 +5,29 @@ interface ProviderProps {
 }
 
 interface ModalPhotoContextProps {
-    imagePopap: boolean;
+    imagePopup: boolean;
     url: string;
-    setImagePopap: React.Dispatch<React.SetStateAction<boolean>>
+    setImagePopup: React.Dispatch<React.SetStateAction<boolean>>
     setUrl: React.Dispatch<React.SetStateAction<string>>
 }
 
 export const ModalPhotoContext = createContext<ModalPhotoContextProps>({
-  imagePopap: false,
+  imagePopup: false,
   url: '',
-  setImagePopap: () => null,
+  setImagePopup: () => null,
   setUrl: () => null,
 });
 
 export function ModalPhotoContextProvider({ children }: ProviderProps) {
-  const [imagePopap, setImagePopap] = useState(false);
+  const [imagePopup, setImagePopup] = useState(false);
   const [url, setUrl] = useState('');
   const value = useMemo(() => ({
-    imagePopap,
-    setImagePopap,
+    imagePopup,
+    setImagePopup,
     url,
     setUrl,
-  }), [imagePopap,
-    setImagePopap,
+  }), [imagePopup,
+    setImagePopup,
     url,
     setUrl]);
 

@@ -5,16 +5,16 @@ import './ModalPhoto.scss';
 
 function ModalPhoto(props: {imageUrl: string}) {
   const { imageUrl } = props;
-  const { setImagePopap } = useContext(ModalPhotoContext);
+  const { setImagePopup } = useContext(ModalPhotoContext);
 
-  function closePopap() {
-    setImagePopap(false);
+  function closePopup() {
+    setImagePopup(false);
   }
 
   return (
     <div className="modal-img">
       <img className="img" src={imageUrl} alt="" />
-      <CloseIcon callback={() => closePopap()} />
+      <CloseIcon callback={() => closePopup()} />
     </div>
   );
 }
