@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { foldersData } from '../../../fakeData';
+import { foldersData } from '../../../data/foldersData';
 import FoldersTabs from '../FoldersTabs/FoldersTabs';
 import ChatsList from '../ChatsList/ChatsList';
 import './SidebarContent.scss';

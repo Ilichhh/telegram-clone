@@ -5,7 +5,7 @@ import {
 import { db } from '../../../firebaseConfig';
 import { ArrowLeftIcon } from '../../../assets/icons/icons';
 import FormInput from '../../form/FormInput/FormInput';
-import AddPhotoButton from '../../AddPhotoButton/AddPhotoButton';
+import AddPhotoButton from '../../settings/AddPhotoButton/AddPhotoButton';
 import './EditGroupInfo.scss';
 import { changeGroupPhoto } from '../../../API/api';
 import Avatar from '../../common/Avatar/Avatar';

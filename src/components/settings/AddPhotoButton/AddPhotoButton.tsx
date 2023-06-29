@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { AddPhotoIcon } from '../../assets/icons/icons';
-import avatarPlaceholder from '../../assets/icons/avatar-placeholder.png';
+import { AddPhotoIcon } from '../../../assets/icons/icons';
+import avatarPlaceholder from '../../../assets/icons/avatar-placeholder.png';
 import './AddPhotoButton.scss';
 
 interface AddPhotoButtonProps {

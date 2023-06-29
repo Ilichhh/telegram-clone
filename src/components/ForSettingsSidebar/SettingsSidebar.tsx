@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SettingsTopPanel from './SettingsHeader/SettingsHeader';
 import UserInfo from './UserInfo/UserInfo';
-import EditProfileBlock from '../ForEditProfile/EditProfileBlock';
+import EditProfileBlock from '../EditProfileBlock/EditProfileBlock';
 import RsSchoolLinks from '../settings/RsSchoolLinks/RsSchoolLinks';
 import './SettingsSidebar.scss';
 
